@@ -13,3 +13,5 @@ function calculatePay(hours, rate) {
 
   return Math.ceil(regularPay + overtimePay);
 }
+
+module.exports = { isValidShift, calculatePay };
