@@ -11,7 +11,5 @@ function calculatePay(hours, rate) {
   const overtimeHours = hours - 8;
   const overtimePay = overtimeHours * rate * 1.5;
 
-  return Math.round(regularPay + overtimePay);
+  return Math.ceil(regularPay + overtimePay);
 }
-
-module.exports = { isValidShift, calculatePay };
